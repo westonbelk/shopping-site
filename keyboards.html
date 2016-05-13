@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2015 Jon Cooper
+
+  This file is part of js-cart.
+
+  Documentation, related files, and licensing can be found at
+
+    <https://github.com/joncoop/js-cart>.
+-->
+
+<html>
+<head>
+<title>pro.GAMR: Keyboards</title>
+<link rel="stylesheet" href="css/cart.css" type="text/css">
+<link rel="stylesheet" href="css/grid-6.css" type="text/css">
+<link rel="stylesheet" href="css/item.css" type="text/css">
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadCart()">
+
+
+
+	<div class="container">
+
+		<header class="row">
+			<div class="full">
+				<h1><a href="index.html">Demo Shopping Site</a></h1>
+				<p>There are <span id="item_count">0</span> items in <a href="cart_example.html">your cart</a>.</p>
+			</div>
+		</header>
+
+		<div class="row">
+			
+		</div>
+
+		<div class="row featured">
+			<div class="hide-mobile one-fifth">
+				Advertisement
+			</div>
+			<div class="three-fifths">
+					<img class="thumbnail" src="img/keyboards/das-4pro.png">
+				<div class="description">
+					<h3>Das 4 Professional - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('das-4pro')" value="Add to Cart">
+				</div>
+			</div>
+			<div class="hide-mobile one-fifth">
+				Advertisement
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/keyboards/razer-bwte.png">
+				</div>
+				<div class="description">
+					<h3>Razer BlackWidow Tournament Edition - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('razer-bwte')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/keyboards/razer-bwex.png">
+				</div>
+				<div class="description">
+					<h3>Razer BlackWidow Expert - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('razer-bwex')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/keyboards/razer-bwxrgb.png">
+				</div>
+				<div class="description">
+					<h3>Razer BlackWidow X Chroma - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('razer-bwxrgb')" value="Add to Cart">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/keyboards/cm-qfr.png">
+				</div>
+				<div class="description">
+					<h3>CM QuickFire Rapid - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('cm-qfr')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/keyboards/cm-qftk.png">
+				</div>
+				<div class="description">
+					<h3>CM QuickFire TK - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('cm-qftk')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/keyboards/cm-qfs.png">
+				</div>
+				<div class="description">
+					<h3>CM QuickFire Stealth - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('cm-qfs')" value="Add to Cart">
+				</div>
+			</div>
+		</div>
+		<footer>Copyright Weston B.</footer>
+	</div>
+
+
+	<script src="js/cart.js"></script>
+
+</body>
+</html>

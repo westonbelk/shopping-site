@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2015 Jon Cooper
+
+  This file is part of js-cart.
+
+  Documentation, related files, and licensing can be found at
+
+    <https://github.com/joncoop/js-cart>.
+-->
+
+<html>
+<head>
+<title>Demo Shopping Site</title>
+<link rel="stylesheet" href="css/cart.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadCart()">
+
+<h1><a href="index.html">Demo Shopping Site</a></h1>
+<h2>Checkout</h2>
+
+<p>You have reached the checkout page. This is where you could request shipping
+and billing information to complete the order.</p>
+
+<form action="thanks_example.html">
+  Name: <input type="text" name="name"> <br>
+  Credit Card:  <input type="text" name="card_num"> <br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<script src="js/cart.js"></script>
+
+</body>
+</html>

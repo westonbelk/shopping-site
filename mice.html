@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2015 Jon Cooper
+
+  This file is part of js-cart.
+
+  Documentation, related files, and licensing can be found at
+
+    <https://github.com/joncoop/js-cart>.
+-->
+
+<html>
+<head>
+<title>pro.GAMR: Mice</title>
+<link rel="stylesheet" href="css/cart.css" type="text/css">
+<link rel="stylesheet" href="css/grid-6.css" type="text/css">
+<link rel="stylesheet" href="css/item.css" type="text/css">
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadCart()">
+
+
+
+	<div class="container">
+
+		<header class="row">
+			<div class="full">
+				<h1><a href="index.html">Demo Shopping Site</a></h1>
+				<p>There are <span id="item_count">0</span> items in <a href="cart_example.html">your cart</a>.</p>
+			</div>
+		</header>
+
+		<div class="row">
+			
+		</div>
+
+		<div class="row featured">
+			<div class="hide-mobile one-fifth">
+				Advertisement
+			</div>
+			<div class="three-fifths">
+					<img class="thumbnail" src="img/mice/roccat-konepme.png">
+				<div class="description">
+					<h3>ROCCAT KONE Pure Military Edition - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('roccat-konepme')" value="Add to Cart">
+				</div>
+			</div>
+			<div class="hide-mobile one-fifth">
+				Advertisement
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/mice/razer-dargb.png">
+				</div>
+				<div class="description">
+					<h3>Razer DeathAdder Chroma - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('razer-dargb')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/mice/razer-mambate.png">
+				</div>
+				<div class="description">
+					<h3>Razer Mamba Tournament Edition - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('razer-mambate')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/mice/razer-naga.png">
+				</div>
+				<div class="description">
+					<h3>Razer Naga - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('razer-naga')" value="Add to Cart">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/mice/logitech-m570.png">
+				</div>
+				<div class="description">
+					<h3>Logitech M570 Wireless Trackball - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('logitech-m570')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/mice/logitech-g502.png">
+				</div>
+				<div class="description">
+					<h3>Logitech G502 Proteus Core - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('logitech-g502')" value="Add to Cart">
+				</div>
+			</div>
+
+			<div class="no-padding item one-third">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="img/mice/logitech-g600.png">
+				</div>
+				<div class="description">
+					<h3>Logitech G600 MMO - $0.99</h3>
+					<input class="buy" type="button" onclick="addToCart('logitech-g600')" value="Add to Cart">
+				</div>
+			</div>
+		</div>
+		<footer>Copyright Weston B.</footer>
+	</div>
+
+
+	<script src="js/cart.js"></script>
+
+</body>
+</html>
