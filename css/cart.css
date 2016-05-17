@@ -9,6 +9,21 @@
  */
 
  /******** cart styles ********/
+:root {
+    --primary-fg-color: #522D80;
+    --container-color: #212121;
+    --background-color: black;
+}
+
+body {
+  background: var(--container-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
 
 div#cart {
 
@@ -20,6 +35,7 @@ div#cart {
 }
 
 #cart table {
+    color: black;
     background-color: #FFFFFF;
     border-spacing: 0;
     margin-bottom: 10px;
@@ -45,7 +61,7 @@ div#cart {
 }
 
 #cart tr.column-headings {
-  background-color: #666666;
+  background-color: var(--primary-fg-color);
   color: #FFFFFF;
 }
 

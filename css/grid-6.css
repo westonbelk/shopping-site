@@ -1,3 +1,9 @@
+:root {
+    --primary-fg-color: #522D80;
+    --container-color: #212121;
+    --background-color: black;
+}
+
 /*** layout styles ***/
 
 html {
@@ -16,10 +22,10 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: var(--container-color);
     margin: 0 auto;
     max-width: 1200px;
-    box-shadow: 0px 5px 5px 5px #888888;
+    box-shadow: 0px 5px 5px 5px var(--primary-fg-color);
 }
 
 .row {
@@ -30,7 +36,7 @@ body {
 
 .row > * {
     /* The border is just to visualize columns during layout. Remove in finished site. */
-    border: 1px solid #BBBBBB;
+    border: 0 solid var(--primary-fg-color);
 
     padding: 15px;
     position: relative;

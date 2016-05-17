@@ -21,22 +21,29 @@
 
 // products you sell by (id, name, price)
 var products = new Array();
+products[3] = new Product("das-4pro", "Das Keyboard 4 Professional", 161.99);
 products[0] = new Product("razer-bwte", "Razer BlackWidow Tournament Edition",  74.99);
 products[1] = new Product("razer-bwex", "Razer BlackWidow Expert",  99.99);
 products[2] = new Product("razer-bwxrgb", "Razer BlackWidow Chroma",  129.99);
-products[3] = new Product("das-4pro", "Das Keyboard 4 Professional", 161.99);
 products[4] = new Product("cm-qfr", "CM Storm QuickFire Rapid", 75.99);
-products[5] = new Product("cm-qfs", "CM Storm QuickFire Stealth", 134.99);
 products[6] = new Product("cm-qftk", "CM Storm QuickFire TK", 80.99);
+products[5] = new Product("cm-qfs", "CM Storm QuickFire Stealth", 134.99);
 
+products[10] = new Product("roccat-konepme", "ROCCAT KONE Pure Military Edition", 54.99);
 products[7] = new Product("razer-dargb", "Razer DeathAdder Chroma", 54.99);
 products[8] = new Product("razer-mambate", "Razer Mamba Tournament Edition", 75.99);
 products[9] = new Product("razer-naga", "Razer Naga", 57.99);
-products[10] = new Product("roccat-konepme", "ROCCAT KONE Pure Military Edition", 54.99);
 products[11] = new Product("logitech-m570", "Logitech M570 Wireless Trackball", 27.99);
 products[12] = new Product("logitech-g502", "Logitech G502 Proteus Core", 93.99);
 products[13] = new Product("logitech-g600", "Logitech G600 MMO", 47.99);
 
+products[14] = new Product("tekmat-ak47", "TekMat AK-47", 14.99);
+products[15] = new Product("razer-firefly", "Razer Firefly", 54.99);
+products[16] = new Product("razer-gol", "Razer Goliathus", 21.99);
+products[17] = new Product("razer-golspeed", "Razer Goliathus Speed", 23.99);
+products[18] = new Product("ss-dex", "Steelseries DeX", 28.99);
+products[20] = new Product("ss-qckheavy", "Steelseries QCK Heavy", 15.99);
+products[19] = new Product("ss-qckplus", "Steelseries QCK+ ", 9.99);
 // tax rate for your state
 var sales_tax_rate = 0.06;
 
@@ -423,4 +430,26 @@ function listProducts()
     {
         document.write(products[i].toString() + "<br />");
     }
+}
+
+function getShippingDate() {
+    console.log("shipped");
+    var shippingDate = document.getElementById('shipping_date');
+
+    var date = new Date();
+    date.setDate(date.getDate() + 2);
+    var dd = date.getDate();
+    var mm = date.getMonth()+1; //January is 0!
+    var yyyy = date.getFullYear();
+
+    if(dd<10) {
+        dd='0'+dd
+    } 
+
+    if(mm<10) {
+        mm='0'+mm
+    } 
+
+    today = mm+'/'+dd+'/'+yyyy;
+    shippingDate.innerHTML = today;
 }

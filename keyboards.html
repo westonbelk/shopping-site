@@ -16,8 +16,9 @@
 <link rel="stylesheet" href="css/cart.css" type="text/css">
 <link rel="stylesheet" href="css/grid-6.css" type="text/css">
 <link rel="stylesheet" href="css/item.css" type="text/css">
-<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/nav-body.css" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 </head>
 
 <body onload="loadCart()">
@@ -26,30 +27,50 @@
 
 	<div class="container">
 
-		<header class="row">
-			<div class="full">
-				<h1><a href="index.html">Demo Shopping Site</a></h1>
-				<p>There are <span id="item_count">0</span> items in <a href="cart_example.html">your cart</a>.</p>
+		<header>
+			<div class="row">
+				<div class="full">
+					<h1><a href="index.html">pro.GAMR</a></h1>
+				</div>
 			</div>
+			<div class="row">
+				<div class="full">
+					<p class="cart-header">
+						<a href="cart_example.html"><img class="cart-icon" src="img/cart_icon.png"></a>
+						<span>There are <span id="item_count">0</span> items in <a href="cart_example.html"> your cart</a>.</span>
+					</p>
+				</div>
+			</div>
+			
+			<nav class="no-padding">
+		        <ul>
+		            <li><a href="index.html">Home</a></li>
+		            <li><a href="mice.html">Mice</a></li>
+		            <li><a href="keyboards.html">Keyboards</a></li>
+		            <li><a href="mousepads.html">Mousepads</a></li>
+		        </ul>
+		    </nav>
 		</header>
 
 		<div class="row">
-			
+			<div class="full">
+				<h2 class="page-title">Keyboards</h2>
+			</div>
 		</div>
 
 		<div class="row featured">
-			<div class="hide-mobile one-fifth">
-				Advertisement
+			<div class="advertisement hide-mobile one-fifth">
+				
 			</div>
 			<div class="three-fifths">
 					<img class="thumbnail" src="img/keyboards/das-4pro.png">
 				<div class="description">
-					<h3>Das 4 Professional - $0.99</h3>
+					<h3>Das 4 Professional - $161.99</h3>
 					<input class="buy" type="button" onclick="addToCart('das-4pro')" value="Add to Cart">
 				</div>
 			</div>
-			<div class="hide-mobile one-fifth">
-				Advertisement
+			<div class="advertisement hide-mobile one-fifth">
+				
 			</div>
 		</div>
 
@@ -59,7 +80,7 @@
 					<img class="thumbnail" src="img/keyboards/razer-bwte.png">
 				</div>
 				<div class="description">
-					<h3>Razer BlackWidow Tournament Edition - $0.99</h3>
+					<h3>Razer BlackWidow Tournament Edition - $74.99</h3>
 					<input class="buy" type="button" onclick="addToCart('razer-bwte')" value="Add to Cart">
 				</div>
 			</div>
@@ -69,7 +90,7 @@
 					<img class="thumbnail" src="img/keyboards/razer-bwex.png">
 				</div>
 				<div class="description">
-					<h3>Razer BlackWidow Expert - $0.99</h3>
+					<h3>Razer BlackWidow Expert - $99.99</h3>
 					<input class="buy" type="button" onclick="addToCart('razer-bwex')" value="Add to Cart">
 				</div>
 			</div>
@@ -79,7 +100,7 @@
 					<img class="thumbnail" src="img/keyboards/razer-bwxrgb.png">
 				</div>
 				<div class="description">
-					<h3>Razer BlackWidow X Chroma - $0.99</h3>
+					<h3>Razer BlackWidow X Chroma - $129.99</h3>
 					<input class="buy" type="button" onclick="addToCart('razer-bwxrgb')" value="Add to Cart">
 				</div>
 			</div>
@@ -91,7 +112,7 @@
 					<img class="thumbnail" src="img/keyboards/cm-qfr.png">
 				</div>
 				<div class="description">
-					<h3>CM QuickFire Rapid - $0.99</h3>
+					<h3>CM QuickFire Rapid - $75.99</h3>
 					<input class="buy" type="button" onclick="addToCart('cm-qfr')" value="Add to Cart">
 				</div>
 			</div>
@@ -101,7 +122,7 @@
 					<img class="thumbnail" src="img/keyboards/cm-qftk.png">
 				</div>
 				<div class="description">
-					<h3>CM QuickFire TK - $0.99</h3>
+					<h3>CM QuickFire TK - $80.99</h3>
 					<input class="buy" type="button" onclick="addToCart('cm-qftk')" value="Add to Cart">
 				</div>
 			</div>
@@ -111,12 +132,12 @@
 					<img class="thumbnail" src="img/keyboards/cm-qfs.png">
 				</div>
 				<div class="description">
-					<h3>CM QuickFire Stealth - $0.99</h3>
+					<h3>CM QuickFire Stealth - $134.99</h3>
 					<input class="buy" type="button" onclick="addToCart('cm-qfs')" value="Add to Cart">
 				</div>
 			</div>
 		</div>
-		<footer>Copyright Weston B.</footer>
+		<footer>Designed by Weston B.</footer>
 	</div>
 
 

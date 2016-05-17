@@ -12,20 +12,50 @@
 
 <html>
 <head>
-<title>Demo Shopping Site</title>
-<link rel="stylesheet" href="css/cart.css" type="text/css" />
+<title>pro.GAMR: Thanks</title>
+<link rel="stylesheet" href="css/grid-6.css" type="text/css" />
+<link rel="stylesheet" href="css/nav-body.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/cart.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 </head>
 
-<body onload="emptyCart()">
+<body onload="emptyCart();getShippingDate()">
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="full">
+          <h1><a href="index.html">pro.GAMR</a></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="full">
+          <p class="cart-header">
+            <a href="cart_example.html"><img class="cart-icon" src="img/cart_icon.png"></a>
+            <span>There are <span id="item_count">0</span> items in <a href="cart_example.html"> your cart</a>.</span>
+          </p>
+        </div>
+      </div>
+      
+      <nav class="no-padding">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mice.html">Mice</a></li>
+                <li><a href="keyboards.html">Keyboards</a></li>
+                <li><a href="mousepads.html">Mousepads</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1><a href="index.html">Demo Shopping Site</a></h1>
+    <main>
+  		<h2>Thank you</h2>
 
-<h2>Thank you</h2>
+  		<p>We have sent you a confirmation email. Thank you for shopping with us! Your package should arrive on <span id="shipping_date"></span> through the United States Postal Service. We can be contacted at orders@pro.gamr with questions regarding your order.</p>
+    </main>
 
-<p>This is where you could thank the customer for their order and empty the cart.</p>
-
-<script src="js/cart.js"></script>
+  <footer>Designed by Weston B.</footer>
+  </div>
+  <script src="js/cart.js"></script>
 
 </body>
 </html>
